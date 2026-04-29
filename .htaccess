@@ -1,0 +1,9 @@
+Options -Indexes
+
+# Prevent access to config files
+<FilesMatch "^\.|\.php$">
+    # Allow index.php and others
+</FilesMatch>
+
+# Custom 404
+ErrorDocument 404 /Blackcafe/index.php
